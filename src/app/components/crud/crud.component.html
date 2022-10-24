@@ -1,0 +1,39 @@
+<div class="container">
+   <h3 style="color: aliceblue;">Employees Management</h3>
+
+   <br>
+
+   <a type="button" class="btn btn-success">Add Employee</a>
+
+   <br>
+   <br>
+
+   <table style="color:rgb(247, 243, 243); width: fit-content;" class="center ; table table-bordered border-primary">
+    <thead style="background-color:rgba(139, 134, 134, 0.329) ;">
+       <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Job</td>
+        <td>Departament</td>
+        <td>Country</td>
+        <td>Action</td>
+       </tr>
+    </thead>
+    <tbody>
+        <tr style="background-color:rgba(70, 104, 104, 0.43) ;" *ngFor="let employee of employeesList">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.age}}</td>
+            <td>{{employee.job}}</td>
+            <td>{{employee.department}}</td>
+            <td>{{employee.country}}</td>
+            <td>
+                <a type="button" class="btn btn-info" [routerLink]="['/employee/details', employee.id]">Details</a>
+                <a type="button" class="btn btn-primary">Edit</a>
+                <button class="btn btn-danger" (click)="removeEmployeeByID(employee.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+   </table>
+</div>

@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Maria",
+      "age": 22,
+      "job": "Software Tester",
+      "department": "IT",
+      "country": "Romania"
+    },
+    {
+      "id": 2,
+      "name": "Ana",
+      "age": 24,
+      "job": "Software Developer",
+      "department": "IT",
+      "country": "Romania"
+    },
+    {
+      "id": 3,
+      "name": "Andrei",
+      "age": 28,
+      "job": "SQL Developer",
+      "department": "IT",
+      "country": "Romania"
+    },
+    {
+      "id": 4,
+      "name": "Tomi",
+      "age": 26,
+      "job": "Business Analyst",
+      "department": "Business",
+      "country": "UK"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<div class="container">
+    <h3 style="color: aliceblue;">Employee Details</h3>
+
+    <br>
+
+    <a type="button" class="btn btn-primary" routerLink="/crud">Back</a>
+
+    <br>
+    <br>
+
+    <table style="color:rgb(247, 243, 243); width: fit-content;" class="center ; table table-bordered border-primary">
+        <thead style="background-color:rgba(139, 134, 134, 0.329) ;">
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Department</td>
+                <td>Job</td>
+                <td>Country</td>
+            </tr>
+        </thead>
+        <tbody style="background-color:rgba(70, 104, 104, 0.43) ;">
+            <tr>
+                <td>{{employeeData.id}}</td>
+                <td>{{employeeData.name}}</td>
+                <td>{{employeeData.age}}</td>
+                <td>{{employeeData.department}}</td>
+                <td>{{employeeData.job}}</td>
+                <td>{{employeeData.country}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

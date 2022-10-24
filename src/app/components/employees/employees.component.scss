@@ -1,0 +1,17 @@
+table,thead,td {
+    border: 2px solid rgb(33, 76, 118);
+    border-collapse: collapse; 
+}
+
+thead {
+    background-color: rgba(103, 134, 212, 0.57);
+}
+
+tbody{
+    background-color: rgba(62, 66, 70, 0.434);
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}

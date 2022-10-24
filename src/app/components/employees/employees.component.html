@@ -1,0 +1,98 @@
+<div>
+    <h3 style="color:rgb(216, 216, 249) ;">Employees components</h3>
+</div>
+
+<!--Proprety Binding -->
+
+<div>
+    <button type="button" class="btn btn-outline-secondary" [disabled] = "!isDisabled">Hello</button>
+</div>
+
+<br>
+<div>
+ <p style="color:white ;">
+    Students Data
+    {{students | json}}
+ </p>
+
+
+ <p style="color:white ;">
+    The birthday value is: {{birthday | date | uppercase}}
+ </p>
+ <p style="color:white ;">
+    The birthday value is: {{birthday | date : 'MM/dd/yyyy'}}
+ </p>
+
+</div>
+
+<div>
+    <p style="color:white ;">Ordered List:</p>
+     <ol>
+        <li style="color:white ;" *ngFor="let student of students">
+            {{student.name}},
+            {{student.age}},
+            {{student.college}},
+            {{student.address}}
+        </li>
+     </ol>
+</div>
+
+<div>
+    <p style="color:white ;">Unordered List:</p>
+     <ul>
+        <li style="color:white ;" *ngFor="let student of students" (click)="clickStudent(student)">
+            {{student.name}},
+            {{student.age}},
+            {{student.college}},
+            {{student.address}}
+        </li>
+     </ul>
+</div>
+
+<div style="color:white ;" *ngIf="selectedStudent">
+     You selected student: {{selectedStudent.name}}
+</div>
+<br>
+
+<table style="color:rgba(255, 255, 255, 0.647);" class="center">
+   <thead>
+      <tr>
+         <td>Name</td>
+         <td>Age</td>
+         <td>College</td>
+         <td>Address</td>
+      </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor="let stud of students">
+         <td>{{stud.name}}</td>
+         <td>{{stud.age}}</td>
+         <td>{{stud.college}}</td>
+         <td>{{stud.address}}</td>
+      </tr>
+   </tbody>
+
+</table>
+
+<br>
+
+<table style="color:rgba(255, 255, 255, 0.647); width: min-content;" class="center ; table table-bordered border-primary">
+   <thead>
+      <tr>
+         <td>Name</td>
+         <td>Age</td>
+         <td>College</td>
+         <td>Address</td>
+      </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor="let stud of students">
+         <td>{{stud.name}}</td>
+         <td>{{stud.age}}</td>
+         <td>{{stud.college}}</td>
+         <td>{{stud.address}}</td>
+      </tr>
+   </tbody>
+
+</table>
+
